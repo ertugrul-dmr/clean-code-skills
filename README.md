@@ -19,15 +19,16 @@ These skills encode battle-tested solutions to exactly these problems—directly
 
 ## What's Included
 
-| Skill | Description | Rules |
-|-------|-------------|-------|
-| `boy-scout` | **Orchestrator**—always leave code cleaner than you found it | Coordinates all skills |
-| `python-clean-code` | **Master skill** with all 66 rules | C1-C5, E1-E2, F1-F4, G1-G36, N1-N7, P1-P3, T1-T9 |
-| `clean-comments` | Minimal, accurate commenting | C1-C5 |
-| `clean-functions` | Small, focused, obvious functions | F1-F4 |
-| `clean-general` | Core principles (DRY, single responsibility) | G5, G16, G23, G25, G30, G36 |
-| `clean-names` | Descriptive, unambiguous naming | N1-N7 |
-| `clean-tests` | Fast, thorough, boundary-aware tests | T1-T9 |
+| Skill               | Description                                                  | Rules                                            |
+|---------------------|--------------------------------------------------------------|--------------------------------------------------|
+| `boy-scout`         | **Orchestrator**—always leave code cleaner than you found it | Coordinates all skills                           |
+| `python-clean-code` | **Master skill** with all 66 rules                           | C1-C5, E1-E2, F1-F4, G1-G36, N1-N7, P1-P3, T1-T9 |
+| `clean-comments`    | Minimal, accurate commenting                                 | C1-C5                                            |
+| `clean-functions`   | Small, focused, obvious functions                            | F1-F4                                            |
+| `clean-features`    | Complexity aware additions and changes                       | FE1-FE4                                          |
+| `clean-general`     | Core principles (DRY, single responsibility)                 | G5, G16, G23, G25, G30, G36                      |
+| `clean-names`       | Descriptive, unambiguous naming                              | N1-N7                                            |
+| `clean-tests`       | Fast, thorough, boundary-aware tests                         | T1-T9                                            |
 
 Use the master skill for comprehensive coverage, or individual skills for targeted enforcement.
 
@@ -181,6 +182,14 @@ def process_transactions_without_tax(transactions: list[Transaction]) -> list[fl
 | F2 | No output arguments |
 | F3 | No flag arguments |
 | F4 | Delete dead functions |
+
+### Feature-specific (FE1-FE4)
+| Rule | Principle                |
+|------|--------------------------|
+| FE1  | Don't reinvent the wheel |
+| FE2  | Appropriation is key     |
+| FE3  | Size matters             |
+| FE4  | No spaghetti             |
 
 ### General (G1-G36)
 | Rule | Principle |
