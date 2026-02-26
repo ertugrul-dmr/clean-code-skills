@@ -76,14 +76,15 @@ def process_positive_values(
 
 This skill coordinates with specialized skills based on what you're doing:
 
-| Task | Trigger Skill |
-|------|---------------|
-| Writing/reviewing any Python | `python-clean-code` (master) |
-| Naming variables, functions, classes | `clean-names` |
-| Writing or editing comments | `clean-comments` |
-| Creating or refactoring functions | `clean-functions` |
-| Reviewing code quality | `clean-general` |
-| Writing or reviewing tests | `clean-tests` |
+| Task                                         | Trigger Skill                |
+|----------------------------------------------|------------------------------|
+| Writing/reviewing any Python                 | `python-clean-code` (master) |
+| Naming variables, functions, classes         | `clean-names`                |
+| Writing or editing comments                  | `clean-comments`             |
+| Creating or refactoring functions            | `clean-functions`            |
+| Reviewing code quality                       | `clean-general`              |
+| Writing or reviewing tests                   | `clean-tests`                |
+| Planning or writing new changes and features | `clean-features`             |
 
 ## The Mindset
 
