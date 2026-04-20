@@ -95,6 +95,35 @@ cp -r /tmp/clean-code-skills/skills/* ~/.claude/skills/ && \
 rm -rf /tmp/clean-code-skills
 ```
 
+**Verify**
+
+In a running Claude Code session, confirm the skills loaded:
+
+- Ask `What skills are available?` — you should see `boy-scout`, `clean-comments`, `clean-functions`, `clean-general`, `clean-names`, `clean-tests`, and `python-clean-code` in the list.
+- Or direct-invoke one: `/boy-scout` should load the Boy Scout skill explicitly.
+
+Skills hot-reload inside an existing `~/.claude/skills/` directory — no restart needed. If you created the directory for the first time during this session, restart Claude Code once so it starts watching it.
+
+**Update**
+
+Re-run the Quick install command to pull the latest version. It overwrites the seven skill directories and leaves any other skills untouched.
+
+If you expect to update often, symlink instead of copy:
+
+```bash
+git clone https://github.com/ertugrul-dmr/clean-code-skills.git ~/src/clean-code-skills
+cd ~/src/clean-code-skills/skills
+for d in */; do ln -sfn "$PWD/${d%/}" "$HOME/.claude/skills/${d%/}"; done
+```
+
+Then `git pull` in `~/src/clean-code-skills` refreshes every skill.
+
+**Uninstall**
+
+```bash
+rm -rf ~/.claude/skills/{boy-scout,clean-comments,clean-functions,clean-general,clean-names,clean-tests,python-clean-code}
+```
+
 ### Other Agent Skills-Compatible Tools
 
 The skills follow the [Agent Skills](https://agentskills.io) open standard. Check your tool's documentation for the skills directory location, then copy the `skills/` folder contents there.
