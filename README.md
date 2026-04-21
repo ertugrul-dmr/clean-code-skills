@@ -438,8 +438,6 @@ Skills use **Progressive Disclosure**:
 
 This keeps the agent fast—it's not thinking about database migrations when you're writing a React component.
 
-Each skill also declares a `paths` glob in its frontmatter (e.g. `**/*.py` or `**/*.ts, **/*.tsx`) so it's only a candidate when you're actually editing matching files. See [Claude Code skills docs › Frontmatter reference](https://code.claude.com/docs/en/skills#frontmatter-reference) for the full field list.
-
 ---
 
 ## Contributing

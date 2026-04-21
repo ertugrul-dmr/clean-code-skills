@@ -3,7 +3,6 @@ name: clean-general
 description: Use when writing, fixing, editing, or reviewing Python code quality. Enforces Clean Code's core principles—DRY, single responsibility, clear intent, no magic numbers, proper abstractions.
 when_to_use: |
   Also trigger on: duplicated logic across files or branches (G5), magic numbers or hardcoded values (G25), long if/elif chains that should be polymorphism (G23), chained property access like `a.b.c.d` (G36), functions juggling multiple responsibilities (G30), clever one-liners whose intent is not obvious (G16).
-paths: '**/*.py'
 ---
 
 # General Clean Code Principles

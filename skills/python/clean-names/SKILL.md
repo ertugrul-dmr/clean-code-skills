@@ -3,7 +3,6 @@ name: clean-names
 description: Use when naming, renaming, or fixing names of variables, functions, classes, or modules in Python. Enforces Clean Code principles—descriptive names, appropriate length, no encodings.
 when_to_use: |
   Also trigger on: single-letter or cryptic identifiers (`d`, `x`, `proc`), Hungarian notation (`str_name`, `lst_users`, `i_count`), `I`-prefixed classes, function names that hide side effects (e.g. `get_config` that also writes a file), non-standard abbreviations, or asks like "rename this", "what does this variable mean", "clearer name".
-paths: '**/*.py'
 ---
 
 # Clean Names

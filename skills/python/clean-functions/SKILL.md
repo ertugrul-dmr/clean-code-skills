@@ -3,7 +3,6 @@ name: clean-functions
 description: Use when writing, fixing, editing, or refactoring Python functions. Enforces Clean Code principles—maximum 3 arguments, single responsibility, no flag parameters.
 when_to_use: |
   Also trigger on: functions with 4+ parameters, boolean flag parameters like `enabled=True`, functions that mutate their arguments in place, one-off `util`/`helper` functions that are never called, or asks like "too many arguments", "split this function", "is this still used".
-paths: '**/*.py'
 ---
 
 # Clean Functions

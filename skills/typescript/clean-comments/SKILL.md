@@ -3,7 +3,6 @@ name: clean-comments
 description: Use when writing, fixing, editing, or reviewing TypeScript comments and TSDoc. Enforces Clean Code principles—no metadata, no redundancy, no commented-out code.
 when_to_use: |
   Also trigger on: commented-out code blocks, TODO/FIXME banners, author/ticket/date metadata in comments or TSDoc, TSDoc that no longer matches the code, redundant comments that restate the code (e.g. `i += 1; // increment i`), or asks like "is this comment useful", "why is this block commented".
-paths: '**/*.ts, **/*.tsx'
 ---
 
 # Clean Comments

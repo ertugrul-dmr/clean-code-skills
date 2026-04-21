@@ -3,7 +3,6 @@ name: clean-functions
 description: Use when writing, fixing, editing, or refactoring TypeScript functions. Enforces Clean Code principles—maximum 3 arguments, single responsibility, no flag parameters.
 when_to_use: |
   Also trigger on: functions (or React components) with 4+ parameters/props, boolean flag parameters like `isTest`, functions that mutate their parameters (e.g. push to an input array), unused exports or dead helper functions, or asks like "too many props", "split this function", "is this still used".
-paths: '**/*.ts, **/*.tsx'
 ---
 
 # Clean Functions

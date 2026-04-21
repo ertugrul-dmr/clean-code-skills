@@ -3,7 +3,6 @@ name: clean-names
 description: Use when naming, renaming, or fixing names of variables, functions, classes, interfaces, or modules in TypeScript. Enforces Clean Code principles—descriptive names, appropriate length, no encodings.
 when_to_use: |
   Also trigger on: single-letter or cryptic identifiers (`d`, `x`, `proc`), Hungarian notation (`strName`, `arrUsers`, `nCount`), `I`-prefixed interfaces (`IUserRepository`), function names that hide side effects (e.g. `getConfig` that also mutates state), ambiguous names like `rename(source, target)`, or asks like "rename this", "clearer name".
-paths: '**/*.ts, **/*.tsx'
 ---
 
 # Clean Names
